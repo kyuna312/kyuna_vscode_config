@@ -1,0 +1,191 @@
+{
+    // Workbench settings
+    "workbench.sideBar.location": "right",
+    "workbench.iconTheme": "eq-material-theme-icons-palenight",
+    "workbench.colorTheme": "Vitesse qb dark pink",
+    "workbench.productIconTheme": "IntelliJ",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.layoutControl.enabled": false,
+
+    // Window settings
+    "window.commandCenter": false,
+
+    // Update settings
+    "update.showReleaseNotes": false,
+
+    // Diff editor settings
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    // Explorer settings
+    "explorer.confirmDelete": false,
+
+    // Editor settings
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "always"
+    },
+    "editor.formatOnSave": true,
+
+    // TypeScript settings
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.tsdk": "node_modules/typescript/lib",
+
+    // ESLint settings
+    "eslint.validate": [
+        "javascript",
+        "typescript",
+        "javascriptreact",
+        "typescriptreact",
+        "python",
+        "html",
+        "vue",
+        "json",
+        "jsonc",
+        "ruby",
+        "shellscript",
+        "yaml",
+        "markdown",
+        "css",
+        "scss",
+        "less",
+        "java",
+        "go",
+        "lua",
+        "c",
+        "cpp",
+        "rust"
+    ],
+
+    // cSpell settings
+    "cSpell.userWords": [
+        "ahooks",
+        "Ardlive",
+        "celebot",
+        "emch",
+        "IMSDK",
+        "Мессэж"
+    ],
+
+    // Terminal settings
+    "terminal.integrated.env.windows": {},
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+    // CMake settings
+    "cmake.configureOnOpen": true,
+    "cmake.options.statusBarVisibility": "visible",
+    "cmake.showOptionsMovedNotification": false,
+
+    // Dart settings
+    "dart.flutterAdbConnectOnChromeOs": true,
+    "dart.cliConsole": "terminal",
+
+    // Python settings
+    "python.defaultInterpreterPath": "/Users/maririn312/zephyrproject/.venv",
+    "python.pythonPath": "/Users/maririn312/zephyrproject/.venv/bin/python",
+
+    // RedHat settings
+    "redhat.telemetry.enabled": true,
+
+    // Settings Sync settings
+    "settingsSync.ignoredSettings": [
+        "editor.tabSize"
+    ],
+    "settingsSync.ignoredExtensions": [
+        "github.copilot"
+    ],
+
+    // Language-specific formatter settings
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "remimarsal.prettier-now"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "remimarsal.prettier-now"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[rubyonrails]": {
+        "editor.defaultFormatter": "rebornix.ruby"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "remimarsal.prettier-now"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "remimarsal.prettier-now"
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "matklad.rust-analyzer"
+    },
+    "[ruby]": {
+        "editor.defaultFormatter": "rebornix.ruby"
+    },
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[java]": {
+        "editor.suggest.snippetsPreventQuickSuggestions": false
+    },
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "[lua]": {
+        "editor.defaultFormatter": "trixnz.vscode-lua"
+    },
+    "[c]": {
+        "editor.wordBasedSuggestions": "off",
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    },
+
+    // Debug settings
+    "debug.javascript.autoAttachFilter": "onlyWithFlag",
+    "debug.node.autoAttach": "on",
+    "debug.openDebug": "openOnSessionStart",
+    "debug.saveBeforeStart": "allEditorsInActiveGroup",
+    "debug.toolBarLocation": "docked",
+    "debug.inlineValues": true,
+    "debug.console.fontSize": 14,
+    "debug.console.wordWrap": true,
+    "debug.console.closeOnEnd": false,
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.showInStatusBar": "always",
+
+    // Debuggers settings
+    "ruby.useBundler": true,
+    "go.useLanguageServer": true,
+    "javascript.debugger.usePreview": true,
+    "rust-analyzer.checkOnSave.command": "clippy"
+}
+
