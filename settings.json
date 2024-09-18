@@ -1,101 +1,86 @@
 {
-    // Workbench settings
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "eq-material-theme-icons-palenight",
     "workbench.colorTheme": "Vitesse qb dark pink",
-    "workbench.productIconTheme": "IntelliJ",
+    "workbench.productIconTheme": "IntelliJ",  
     "workbench.statusBar.visible": false,
-    "workbench.activityBar.location": "hidden",
     "workbench.layoutControl.enabled": false,
-
-    // Window settings
     "window.commandCenter": false,
-
-    // Update settings
     "update.showReleaseNotes": false,
-
-    // Diff editor settings
     "diffEditor.ignoreTrimWhitespace": false,
-
-    // Explorer settings
     "explorer.confirmDelete": false,
-
-    // Editor settings
-    "editor.tabSize": 2,
+    "editor.accessibilitySupport": "off",
     "editor.codeActionsOnSave": {
-        "source.fixAll": "always"
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit"
     },
+    "editor.fontFamily": "Dank Mono",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 1.75,
+    "editor.suggestFontSize": 0,
+    "editor.suggestLineHeight": 28,
     "editor.formatOnSave": true,
-
-    // TypeScript settings
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "typescript.tsdk": "node_modules/typescript/lib",
-
-    // ESLint settings
-    "eslint.validate": [
-        "javascript",
-        "typescript",
-        "javascriptreact",
-        "typescriptreact",
-        "python",
-        "html",
-        "vue",
-        "json",
-        "jsonc",
-        "ruby",
-        "shellscript",
-        "yaml",
-        "markdown",
-        "css",
-        "scss",
-        "less",
-        "java",
-        "go",
-        "lua",
-        "c",
-        "cpp",
-        "rust"
-    ],
-
-    // cSpell settings
-    "cSpell.userWords": [
-        "ahooks",
-        "Ardlive",
-        "celebot",
-        "emch",
-        "IMSDK",
-        "Мессэж"
-    ],
-
-    // Terminal settings
+    "editor.lightbulb.enabled": "off",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "boundary",
+    "editor.overviewRulerBorder": false,
+    "editor.scrollbar.verticalScrollbarSize": 4,
+    "editor.scrollbar.horizontalScrollbarSize": 4,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.renderLineHighlight": "all",
+    "editor.renderControlCharacters": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true,
+    "editor.minimap.enabled": false,
+    "editor.glyphMargin": false,
+    "editor.folding": true,
+    "editor.lineNumbers": "on",
+    "breadcrumbs.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.autoReveal": false,
+    "extensions.ignoreRecommendations": true,
+    "files.insertFinalNewline": true,
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.env.windows": {},
     "terminal.integrated.defaultProfile.windows": "Git Bash",
-
-    // CMake settings
+    "terminal.integrated.fontFamily": "monospace",
+    "scm.diffDecorations": "none",
+    "terminal.integrated.lineHeight": 1,
+    "terminal.integrated.fontSize": 14,
+    "telemetry.telemetryLevel": "off",
+    "workbench.colorCustomizations": {
+        "terminalCursor.foreground": "#C45DFF",
+        "terminal.background": "#00000000",
+        "editorGroupHeader.tabsBackground": "#00000000",
+        "sideBar.background": "#00000000",
+        "tab.activeBackground": "#00000000",
+        "statusBar.noFolderBackground": "#00000000"
+    },
+    "workbench.editor.pinnedTabSizing": "compact",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.editor.enablePreview": false,
+    "zenMode.hideLineNumbers": true,
+    "window.zoomLevel": 1,
+    "window.nativeFullScreen": true,
+    "window.titleBarStyle": "native",
+    "editor.wordWrap": "on",
+    "prettier.printWidth": 120,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "eslint.validate": [
+        "javascript", "typescript", "javascriptreact", "typescriptreact", "python", "html", "vue", "json", "jsonc", "ruby", 
+        "shellscript", "yaml", "markdown", "css", "scss", "less", "java", "go", "lua", "c", "cpp", "rust"
+    ],
     "cmake.configureOnOpen": true,
     "cmake.options.statusBarVisibility": "visible",
     "cmake.showOptionsMovedNotification": false,
-
-    // Dart settings
-    "dart.flutterAdbConnectOnChromeOs": true,
-    "dart.cliConsole": "terminal",
-
-    // Python settings
     "python.defaultInterpreterPath": "/Users/maririn312/zephyrproject/.venv",
-    "python.pythonPath": "/Users/maririn312/zephyrproject/.venv/bin/python",
-
-    // RedHat settings
-    "redhat.telemetry.enabled": true,
-
-    // Settings Sync settings
-    "settingsSync.ignoredSettings": [
-        "editor.tabSize"
-    ],
-    "settingsSync.ignoredExtensions": [
-        "github.copilot"
-    ],
-
-    // Language-specific formatter settings
+    "settingsSync.ignoredSettings": ["editor.tabSize"],
+    "settingsSync.ignoredExtensions": ["github.copilot"],
     "[typescriptreact]": {
         "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
     },
@@ -123,14 +108,8 @@
     "[javascriptreact]": {
         "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
     },
-    "[rubyonrails]": {
+    "[ruby]": {
         "editor.defaultFormatter": "rebornix.ruby"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "remimarsal.prettier-now"
     },
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
@@ -140,9 +119,6 @@
     },
     "[rust]": {
         "editor.defaultFormatter": "matklad.rust-analyzer"
-    },
-    "[ruby]": {
-        "editor.defaultFormatter": "rebornix.ruby"
     },
     "[shellscript]": {
         "editor.defaultFormatter": "foxundermoon.shell-format"
@@ -157,7 +133,7 @@
         "editor.insertSpaces": false,
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            "source.organizeImports": "explicit"
         }
     },
     "[lua]": {
@@ -165,27 +141,15 @@
     },
     "[c]": {
         "editor.wordBasedSuggestions": "off",
-        "editor.suggest.insertMode": "replace",
         "editor.semanticHighlighting.enabled": true
     },
-
-    // Debug settings
     "debug.javascript.autoAttachFilter": "onlyWithFlag",
     "debug.node.autoAttach": "on",
-    "debug.openDebug": "openOnSessionStart",
     "debug.saveBeforeStart": "allEditorsInActiveGroup",
-    "debug.toolBarLocation": "docked",
-    "debug.inlineValues": true,
     "debug.console.fontSize": 14,
-    "debug.console.wordWrap": true,
-    "debug.console.closeOnEnd": false,
-    "debug.allowBreakpointsEverywhere": true,
-    "debug.showInStatusBar": "always",
-
-    // Debuggers settings
     "ruby.useBundler": true,
     "go.useLanguageServer": true,
     "javascript.debugger.usePreview": true,
-    "rust-analyzer.checkOnSave.command": "clippy"
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "workbench.activityBar.location": "hidden"
 }
-
