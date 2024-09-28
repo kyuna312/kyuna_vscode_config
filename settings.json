@@ -6,7 +6,6 @@
     "workbench.productIconTheme": "IntelliJ",
     "workbench.tree.indent": 15,
     "workbench.statusBar.visible": false,
-    "workbench.activityBar.location": "hidden",
     "workbench.layoutControl.enabled": false,
     "editor.fontWeight": "400",
     "editor.inlineSuggest.suppressSuggestions": true,
@@ -19,12 +18,11 @@
     "editor.mouseWheelZoom": true,
     "explorer.sortOrder": "type",
     "workbench.tree.enableStickyScroll": false,
-    
+  
     // Silence the Noise
     "breadcrumbs.enabled": false,
     "scm.diffDecorations": "none",
     "editor.hover.delay": 1500,
-    "editor.hover.enabled": true,
     "editor.matchBrackets": "never",
     "workbench.tips.enabled": false,
     "editor.colorDecorators": false,
@@ -43,260 +41,114 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "editor.gotoLocation.multipleImplementations": "goto",
     "editor.gotoLocation.multipleTypeDefinitions": "goto",
-
+  
     // Typography
     "editor.suggestFontSize": 16,
     "editor.suggestLineHeight": 30,
     "terminal.integrated.lineHeight": 1.5,
     "terminal.integrated.fontSize": 16,
-
+  
+    // Search settings
     "search.useIgnoreFiles": false,
     "search.exclude": {
-        "**/vendor/{[^l],?[^ai]}*": true,
-        // Hide everything in /public, except "index.php"
-        "**/public/{[^i],?[^n]}*": true,
-        "**/node_modules": true,
-        "**/dist": true,
-        "**/package-lock.json": true,
+      "**/vendor/**": true,
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/package-lock.json": true
     },
-
+  
+    // Better Comments settings
     "better-comments.tags": [
-        {
-            "tag": "TODO:",
-            "color": "#EA580C",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "FIXME:",
-            "color": "#FF2D00",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "BUG:",
-            "color": "#9333EA",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "HACK:",
-            "color": "#C026D3",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "NOTE:",
-            "color": "#2563EB",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "INFO:",
-            "color": "#0EA5E9",
-            "strikethrough": false,
-            "backgroundColor": "transparent"
-        },
-        {
-            "tag": "IDEA:",
-            "color": "#FFF",
-            "strikethrough": false,
-            "backgroundColor": "#EAB308"
-        }
+      { "tag": "TODO:", "color": "#EA580C", "strikethrough": false, "backgroundColor": "transparent" },
+      { "tag": "FIXME:", "color": "#FF2D00", "strikethrough": false, "backgroundColor": "transparent" },
+      { "tag": "BUG:", "color": "#9333EA", "strikethrough": false, "backgroundColor": "transparent" },
+      { "tag": "HACK:", "color": "#C026D3", "strikethrough": false, "backgroundColor": "transparent" },
+      { "tag": "NOTE:", "color": "#2563EB", "strikethrough": false, "backgroundColor": "transparent" },
+      { "tag": "INFO:", "color": "#0EA5E9", "strikethrough": false, "backgroundColor": "transparent" },
+      { "tag": "IDEA:", "color": "#FFF", "strikethrough": false, "backgroundColor": "#EAB308" }
     ],
-    // Window settings
-    "window.commandCenter": false,
-
-    // Update settings
-    "update.showReleaseNotes": false,
-
-    // Diff editor settings
-    "diffEditor.ignoreTrimWhitespace": false,
-
-    // Explorer settings
-    "explorer.confirmDelete": false,
-
+  
     // Editor settings
     "editor.tabSize": 2,
     "editor.codeActionsOnSave": {
-        "source.fixAll": "always"
+      "source.fixAll": "explicit"
     },
     "editor.formatOnSave": true,
-
+  
     // TypeScript settings
     "typescript.updateImportsOnFileMove.enabled": "always",
     "typescript.tsdk": "node_modules/typescript/lib",
-
+  
     // ESLint settings
     "eslint.validate": [
-        "javascript",
-        "typescript",
-        "javascriptreact",
-        "typescriptreact",
-        "python",
-        "html",
-        "vue",
-        "json",
-        "jsonc",
-        "ruby",
-        "shellscript",
-        "yaml",
-        "markdown",
-        "css",
-        "scss",
-        "less",
-        "java",
-        "go",
-        "lua",
-        "c",
-        "cpp",
-        "rust"
+      "javascript", "typescript", "javascriptreact", "typescriptreact", "python", "html", "vue",
+      "json", "jsonc", "ruby", "shellscript", "yaml", "markdown", "css", "scss", "less", "java",
+      "go", "lua", "c", "cpp", "rust"
     ],
-
+  
     // cSpell settings
-    "cSpell.userWords": [
-        "ahooks",
-        "Ardlive",
-        "celebot",
-        "emch",
-        "IMSDK",
-        "Мессэж"
-    ],
-
+    "cSpell.userWords": ["ahooks", "Ardlive", "celebot", "emch", "IMSDK", "Мессэж"],
+  
     // Terminal settings
-    "terminal.integrated.env.windows": {},
     "terminal.integrated.defaultProfile.windows": "Git Bash",
-
+    "terminal.integrated.fontFamily": "monospace",
+  
     // CMake settings
     "cmake.configureOnOpen": true,
-    "cmake.options.statusBarVisibility": "visible",
-    "cmake.showOptionsMovedNotification": false,
-
-    // Dart settings
-    "dart.flutterAdbConnectOnChromeOs": true,
-    "dart.cliConsole": "terminal",
-
+  
     // Python settings
     "python.defaultInterpreterPath": "/Users/maririn312/zephyrproject/.venv",
     "python.pythonPath": "/Users/maririn312/zephyrproject/.venv/bin/python",
-
-    // RedHat settings
-    "redhat.telemetry.enabled": true,
-
-    // Settings Sync settings
-    "settingsSync.ignoredSettings": [
-        "editor.tabSize"
-    ],
-    "settingsSync.ignoredExtensions": [
-        "github.copilot"
-    ],
-
+  
+    // Settings Sync
+    "settingsSync.ignoredSettings": ["editor.tabSize"],
+    "settingsSync.ignoredExtensions": ["github.copilot"],
+  
     // Language-specific formatter settings
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-    },
-    "[python]": {
-        "editor.defaultFormatter": "remimarsal.prettier-now"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "remimarsal.prettier-now"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[less]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[vue]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-    },
-    "[rubyonrails]": {
-        "editor.defaultFormatter": "rebornix.ruby"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "remimarsal.prettier-now"
-    },
-    "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "remimarsal.prettier-now"
-    },
-    "[rust]": {
-        "editor.defaultFormatter": "matklad.rust-analyzer"
-    },
-    "[ruby]": {
-        "editor.defaultFormatter": "rebornix.ruby"
-    },
-    "[shellscript]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
-    },
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "[java]": {
-        "editor.suggest.snippetsPreventQuickSuggestions": false
-    },
-    "[go]": {
-        "editor.insertSpaces": false,
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
-        }
-    },
-    "[lua]": {
-        "editor.defaultFormatter": "trixnz.vscode-lua"
-    },
-    "[c]": {
-        "editor.wordBasedSuggestions": "off",
-        "editor.suggest.insertMode": "replace",
-        "editor.semanticHighlighting.enabled": true
-    },
-
+    "[typescriptreact]": { "editor.defaultFormatter": "rvest.vs-code-prettier-eslint" },
+    "[python]": { "editor.defaultFormatter": "remimarsal.prettier-now" },
+    "[jsonc]": { "editor.defaultFormatter": "remimarsal.prettier-now" },
+    "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[vue]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[javascriptreact]": { "editor.defaultFormatter": "rvest.vs-code-prettier-eslint" },
+    "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[javascript]": { "editor.defaultFormatter": "remimarsal.prettier-now" },
+    "[cpp]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
+    "[html]": { "editor.defaultFormatter": "remimarsal.prettier-now" },
+    "[rust]": { "editor.defaultFormatter": "matklad.rust-analyzer" },
+    "[ruby]": { "editor.defaultFormatter": "rebornix.ruby" },
+    "[shellscript]": { "editor.defaultFormatter": "foxundermoon.shell-format" },
+    "[yaml]": { "editor.defaultFormatter": "redhat.vscode-yaml" },
+  
     // Debug settings
     "debug.javascript.autoAttachFilter": "onlyWithFlag",
-    "debug.node.autoAttach": "on",
     "debug.openDebug": "openOnSessionStart",
-    "debug.saveBeforeStart": "allEditorsInActiveGroup",
-    "debug.toolBarLocation": "docked",
-    "debug.inlineValues": true,
-    "debug.console.fontSize": 14,
     "debug.console.wordWrap": true,
     "debug.console.closeOnEnd": false,
-    "debug.allowBreakpointsEverywhere": true,
-    "debug.showInStatusBar": "always",
-
-    // Debuggers settings
-    "ruby.useBundler": true,
-    "go.useLanguageServer": true,
-    "javascript.debugger.usePreview": true,
+  
+    // Rust settings
     "rust-analyzer.checkOnSave.command": "clippy",
-    "workbench.colorCustomizations": {
-        "terminal.background": "#00000000"
-    },
-    "workbench.settings.applyToAllProfiles": [
-        "workbench.colorCustomizations"
-    ],
-    "window.titleBarStyle": "custom",
-    "RainbowBrackets.depreciation-notice": false,
+  
+    // Custom CSS & JS
     "vscode_custom_css.imports": [
-        "file:///Users/maririn312/vscode-style.css",
-        "file:///Users/maririn312/vscode-script.js"
+      "file:///Users/maririn312/vscode-style.css",
+      "file:///Users/maririn312/vscode-script.js"
     ],
-    "makefile.configureOnOpen": true,
+  
+    // Auto save
     "files.autoSave": "onWindowChange",
+  
+    // Startup editor
     "workbench.startupEditor": "none",
-    "terminal.integrated.fontFamily": "monospace"
-}
+    "workbench.colorCustomizations": {
+      "terminal.background": "#00000000"
+    },
+    "workbench.activityBar.location": "hidden",
+    "workbench.settings.applyToAllProfiles": [
+      "workbench.colorCustomizations"
+    ],
+    "window.commandCenter": false
+  }
+  
